@@ -34,9 +34,9 @@
 <body>
     <!-- banner section  -->
 
-    <section class="container bg-[#F9F6E2] mx-auto p-5">
+    <section class="p-5 lg:p-0">
         <!-- ---SALE FEVER--- -->
-        <div class="hero flex flex-row min-h-screen bg-base-200">
+        <div class="hero bg-[#F9F6E2] lg:px-28 flex flex-row min-h-screen">
             <div class="hero-content flex-col lg:flex-row-reverse">
                 <img class="w-3/6" src="./images/Summer 1.png" />
                 <div>
@@ -47,8 +47,9 @@
 
                     <div class="flex gap-3 items-center mt-5">
                         <p id="discount-code">Use Promo Code</p>
-                        <button id="discount-btn" onclick="getContainer(this)"
-                            class="w-24 h-10 rounded bg-red-600 text-white font-bold">SELL200</button>
+                        <h2 id="discount-code"
+                            class="w-24 h-10 text-center pt-2 rounded bg-[#E527B2] text-white font-bold">
+                            SELL200</h2>
 
                     </div>
                 </div>
@@ -130,9 +131,9 @@
                 <div class="border border-5px border-stone-950">
                     <h2 class="pl-2">Have coupon?</h2>
                     <div class="flex mt-3 pl-2 mb-2">
-                        <input id="apply-btn" type="text" placeholder="Coupon code" class=" w-3/5 input-bordered"
+                        <input id="input-fild" type="text" placeholder="Coupon code" class=" w-3/5 input-bordered"
                             </input>
-                        <button class="btn btn-secondary">
+                        <button id="discount-btn" class="btn bg-[#E527B2]">
                             Apply</button>
                     </div>
                 </div>
@@ -144,8 +145,8 @@
                     <hr>
                     <div class=" my-3">
                         <p>Total Price : <span id="Total-price"></span>TK</p>
-                        <p class="py-3">Discount : <span id="discount-money"></span>tk </p>
-                        <p>Total: </p>
+                        <p class="py-3">Discount : <span id="discount-money"></span> tk </p>
+                        <p>Total: <span id="total-pay"></span> tk</p>
                     </div>
 
                     <hr>
@@ -227,6 +228,15 @@
 
     </section>
 
+    <button class="btn" onclick="my_modal_3.showModal()">open modal</button>
+    <dialog id="my_modal_3" class="modal">
+        <form method="dialog" class="modal-box">
+            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+            <h3 class="font-bold text-lg">Congratulations</h3>
+            <p class="py-4">PYour Purchase the product</p>
+            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+        </form>
+    </dialog>
 
     <script src="./index.js"></script>
 </body>
