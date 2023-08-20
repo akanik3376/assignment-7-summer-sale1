@@ -34,7 +34,7 @@
 <body>
     <!-- banner section  -->
 
-    <section class="p-5 lg:p-0">
+    <section class="p-5 google-font lg:p-0">
         <!-- ---SALE FEVER--- -->
         <div class="hero bg-[#F9F6E2] lg:px-28 flex flex-row min-h-screen">
             <div class="hero-content flex-col lg:flex-row-reverse">
@@ -59,113 +59,147 @@
 
     <!--fast cards section -->
 
-    <section class="container  mx-auto my-12 p-5 ">
+    <section class="container  google-font mx-auto my-12 p-5 ">
         <h2 class="text-color text-4xl mb-5">Kitchenware</h2>
+
         <!-- card  section 1 -->
-        <div class="card-container gap-4 grid md:grid-cols-2 lg:grid-cols-4">
-            <div onclick="getContainer(this)" class="card  shadow-2xl p-3">
+        <div class="flex gap-10 flex-col  md:flex-col lg:flex-row">
+            <div class="card-container gap-4 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+                <div onclick="getContainer(this)" class="card  shadow-2xl p-3">
 
-                <img class="px-5 pt-10  bg-[#1111110D]" src="./images/prod1.png" alt="" class="rounded-xl" />
+                    <img class="px-5 pt-10  bg-[#1111110D]" src="./images/prod1.png" alt="" class="rounded-xl" />
 
-                <div class="card-body items-center text-center">
-                    <div class="rating">
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-100" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-100" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-100" />
+                    <div class="card-body items-center text-center">
+                        <div class="rating">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-100" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-100" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-100" />
+                        </div>
+
                     </div>
+                    <h3 class="font-semibold text-xl text-center">K. Accessories</h3>
+                    <h3 class="text-center">49.00 TK</h3>
+                </div>
+
+                <!-- card 2  -->
+
+                <div onclick="getContainer(this)" class="card  shadow-2xl p-3">
+
+
+                    <img class=" pt-10  bg-[#1111110D]" src="./images/prod2.png" alt="" class="rounded-xl" />
+
+
+                    <div class="card-body items-center text-center">
+                        <div class="rating">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-100" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-100" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-100" />
+                        </div>
+
+                    </div>
+                    <h3 class="font-semibold text-xl text-center">K. Accessories</h3>
+                    <h3 class="text-center">25.00 TK</h3>
+                </div>
+
+                <!-- third card  -->
+
+                <div onclick="getContainer(this)" class="card  shadow-2xl p-3">
+
+
+                    <img class="pt-10  bg-[#1111110D]" src="./images/prod3.png" alt="" class="rounded-xl" />
+
+
+                    <div class="card-body items-center text-center">
+                        <div class="rating">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-100" />
+                        </div>
+
+                    </div>
+                    <h3 class="font-semibold text-xl text-center">Home Cooker</h3>
+                    <h3 class="text-center">49.00 TK</h3>
+
+
 
                 </div>
-                <h3 class="font-semibold text-xl text-center">K. Accessories</h3>
-                <h3 class="text-center">49.00 TK</h3>
+                <!-- card end  -->
+
+
+
+
+
             </div>
+            <div class="sm:w-30 md:w-40 lg:w-auto mt-10 rounded-lg">
+                <div class="">
 
-            <!-- card 2  -->
-
-            <div onclick="getContainer(this)" class="card  shadow-2xl p-3">
-
-
-                <img class=" pt-10  bg-[#1111110D]" src="./images/prod2.png" alt="" class="rounded-xl" />
-
-
-                <div class="card-body items-center text-center">
-                    <div class="rating">
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-100" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-100" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-100" />
+                    <div class="border border-5px border-stone-950">
+                        <h2 class="pl-2">Have coupon?</h2>
+                        <div class="flex mt-3 pl-2 mb-2">
+                            <input id="input-fild" type="text" placeholder="Coupon code" class=" w-3/5 input-bordered"
+                                </input>
+                            <button id="discount-btn" class="btn bg-[#E527B2] " disabled>
+                                Apply</button>
+                        </div>
                     </div>
 
-                </div>
-                <h3 class="font-semibold text-xl text-center">K. Accessories</h3>
-                <h3 class="text-center">25.00 TK</h3>
-            </div>
+                    <div>
+                        <div id="get-name" class="card p-5 h-24 overflow-y-scroll">
 
-            <!-- third card  -->
+                        </div>
+                        <hr>
+                        <div class=" my-3">
+                            <p>Total Price : <span id="Total-price"></span>TK</p>
+                            <p class="py-3">Discount : <span id="discount-money"></span> tk </p>
+                            <p>Total: <span id="total-pay"></span> tk</p>
+                        </div>
 
-            <div onclick="getContainer(this)" class="card  shadow-2xl p-3">
+                        <hr>
 
 
-                <img class="pt-10  bg-[#1111110D]" src="./images/prod3.png" alt="" class="rounded-xl" />
 
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button id="btn-purchase" disabled class="btn bg-[#E527B2] text-white px-3  py-2 
+           rounded" onclick="my_modal_1.showModal()">Make Purchase</button>
+                        <dialog id="my_modal_1" class="modal sm:w-2/4 lg:w-3/4">
+                            <form method="dialog" class="modal-box ">
+                                <div class="w-9/12 mx-auto  justify-items-center md:mt-0  mt-5 mb-5">
+                                    <img class="  mx-auto  lg:w-36" src="./images/congo.png" alt="" srcset="">
+                                    <h3 class="font-bold sm:text-2xl lg:text-5xl text-[#111] text-center">
+                                        Congratulations</h3>
+                                    <p class="py-4 text-center">Your Purchase the product</p>
+                                    <div class="modal-action justify-center">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button id="btn-home"
+                                            class="bg-[#E527B2] px-5  py-3 rounded text-[#FFF] text-xl font-semibold">Go
+                                            Home</button>
+                                    </div>
 
-                <div class="card-body items-center text-center">
-                    <div class="rating">
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-100" />
-                    </div>
+                                </div>
 
-                </div>
-                <h3 class="font-semibold text-xl text-center">Home Cooker</h3>
-                <h3 class="text-center">49.00 TK</h3>
-            </div>
-            <!-- card end  -->
-
-            <div class="card">
-
-                <div class="border border-5px border-stone-950">
-                    <h2 class="pl-2">Have coupon?</h2>
-                    <div class="flex mt-3 pl-2 mb-2">
-                        <input id="input-fild" type="text" placeholder="Coupon code" class=" w-3/5 input-bordered"
-                            </input>
-                        <button id="discount-btn" class="btn bg-[#E527B2]">
-                            Apply</button>
-                    </div>
-                </div>
-
-                <div>
-                    <div id="get-name" class="card p-5 h-24 overflow-y-scroll">
+                            </form>
+                        </dialog>
 
                     </div>
-                    <hr>
-                    <div class=" my-3">
-                        <p>Total Price : <span id="Total-price"></span>TK</p>
-                        <p class="py-3">Discount : <span id="discount-money"></span> tk </p>
-                        <p>Total: <span id="total-pay"></span> tk</p>
-                    </div>
-
-                    <hr>
-
-                    <button class="btn mt-5 bg-[#E527B2] w-44">Make Purchase</button>
                 </div>
             </div>
-
         </div>
-
     </section>
     <!--fast cards section -->
 
 
     <!-- second card section -->
-    <section class="container  mx-auto my-12 p-5">
+    <section class="container mx-auto google-font my-12 p-5 ">
         <h2 class="text-color text-4xl mb-5">Kitchenware</h2>
+
         <!-- card  section 1 -->
-        <div class="card-container gap-4 grid md:grid-cols-2 lg:grid-cols-3">
+        <div class="card-container gap-4 grid md:grid-cols-2 lg:grid-cols-4">
             <div onclick="getContainer(this)" class="card  shadow-2xl p-3">
 
                 <img class=" pt-10 bg-[#1111110D]" src="./images/prod4.png" alt="" class="rounded-xl" />
@@ -228,15 +262,8 @@
 
     </section>
 
-    <button class="btn" onclick="my_modal_3.showModal()">open modal</button>
-    <dialog id="my_modal_3" class="modal">
-        <form method="dialog" class="modal-box">
-            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
-            <h3 class="font-bold text-lg">Congratulations</h3>
-            <p class="py-4">PYour Purchase the product</p>
-            <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
-        </form>
-    </dialog>
+
+    <!-- modal section -->
 
     <script src="./index.js"></script>
 </body>

@@ -3,6 +3,7 @@ let value = 0;
 function getContainer(event) {
     const element = event.childNodes[5].innerText;
     const newOl = document.createElement('ol');
+
     newOl.innerText = element;
 
     const getName = document.getElementById('get-name');
@@ -13,7 +14,29 @@ function getContainer(event) {
 
     const TotalPrice = document.getElementById('Total-price').innerText = value.toFixed(2);
 
+    if (value > 0) {
+        const discountBtn = document.getElementById('discount-btn');
+        discountBtn.disabled = false;
+    } else {
+        discountBtn.disabled = true;
+    }
+
+
+
+    if (value >= 1) {
+        const makePurchase = document.getElementById('btn-purchase');
+
+        makePurchase.disabled = false;
+
+    } else {
+        makePurchase.disabled = true
+    }
+
 }
+
+document.getElementById('btn-home').addEventListener('click', function () {
+    window.location.href = 'http://127.0.0.1:5500/index.html'
+})
 
 const inputFild = document.getElementById('input-fild')
 const discountBtn = document.getElementById('discount-btn');
@@ -35,7 +58,16 @@ discountBtn.addEventListener('click', function () {
         totalPay.innerText = value.toFixed(2);
 
     }
+
+
+
 })
+
+
+
+
+
+
 
 
 
