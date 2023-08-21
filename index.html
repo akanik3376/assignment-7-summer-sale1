@@ -34,16 +34,17 @@
 <body>
     <!-- banner section  -->
 
-    <section class="p-5 google-font lg:p-0">
+    <section class=" google-font lg:p-0">
         <!-- ---SALE FEVER--- -->
         <div class="hero bg-[#F9F6E2] lg:px-28 flex flex-row min-h-screen">
             <div class="hero-content flex-col lg:flex-row-reverse">
                 <img class="w-3/6" src="./images/Summer 1.png" />
-                <div>
+                <div class="w-80 md:w-96 lg:w-96 mx-auto">
                     <h4 class="md:text-center mb-4">---SALE FEVER---</h4>
-                    <h1 class=" google-font font-bold text-color text-5xl">Purchase TK 200 or above & get <span
-                            class="btn-color">20%
-                            off</span></h1>
+                    <h1 class=" google-font font-bold text-color text-3xl md:text-5xl">Purchase TK 200 or above & get
+                        <span class="btn-color">20%
+                            off</span>
+                    </h1>
 
                     <div class="flex gap-3 items-center mt-5">
                         <p id="discount-code">Use Promo Code</p>
@@ -59,13 +60,13 @@
 
     <!--fast cards section -->
 
-    <section class="container  google-font mx-auto my-12 p-5 ">
+    <section class="container  google-font mx-auto mt-5 p-5 ">
         <h2 class="text-color text-4xl mb-5">Kitchenware</h2>
 
         <!-- card  section 1 -->
         <div class="flex gap-10 flex-col   lg:flex-row">
             <div class="card-container gap-4 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-                <div onclick="getContainer(this)" class="card  shadow-2xl p-3">
+                <div onclick="getContainer(this)" class="card shadow-2xl p-3">
 
                     <img class="px-5 pt-10  bg-[#1111110D]" src="./images/prod1.png" alt="" class="rounded-xl" />
 
@@ -110,11 +111,11 @@
                 <div onclick="getContainer(this)" class="card  shadow-2xl p-3">
 
 
-                    <img class="pt-10  bg-[#1111110D]" src="./images/prod3.png" alt="" class="rounded-xl" />
+                    <img class="pt-12  bg-[#1111110D]" src="./images/prod3.png" alt="" class="rounded-xl" />
 
 
-                    <div class="card-body items-center text-center">
-                        <div class="rating">
+                    <div class="card-body items-center  text-center">
+                        <div class="rating ">
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
@@ -123,7 +124,7 @@
                         </div>
 
                     </div>
-                    <h3 class="font-semibold text-xl text-center">Home Cooker</h3>
+                    <h3 class="font-semibold text-xl  text-center">Home Cooker</h3>
                     <h3 class="text-center">49.00 TK</h3>
 
 
@@ -131,12 +132,10 @@
                 </div>
                 <!-- card end  -->
 
-
-
-
-
             </div>
-            <div class="sm:w-30 md:w-40 lg:w-auto mt-10 rounded-lg">
+
+
+            <div class="sm:w-30 md:w-3/5 md:mx-auto lg:w-auto mt-10 rounded-lg">
                 <div class="">
 
                     <div class="border border-5px border-stone-950">
@@ -149,9 +148,11 @@
                         </div>
                     </div>
 
-                    <div>
-                        <div id="get-name" class="card p-5 h-24 overflow-y-scroll">
+                    <div class=" border-2 border-black mt-1">
+                        <div>
+                            <ol id="get-name" class="card p-5 h-24 list-decimal overflow-y-scroll">
 
+                            </ol>
                         </div>
                         <hr>
                         <div class=" my-3">
@@ -165,9 +166,9 @@
 
 
                         <!-- Open the modal using ID.showModal() method -->
-                        <button id="btn-purchase" disabled class="btn bg-[#E527B2] text-white px-3  py-2 
+                        <button id="btn-purchase" disabled class="btn w-full mt-2 bg-[#E527B2] text-white px-3  py-2 
            rounded" onclick="my_modal_1.showModal()">Make Purchase</button>
-                        <dialog id="my_modal_1" class="modal sm:w-2/4 lg:w-3/4">
+                        <dialog id="my_modal_1" class="modal sm:w-2/4 lg:w-3/4 mx-auto">
                             <form method="dialog" class="modal-box ">
                                 <div class="w-9/12 mx-auto  justify-items-center md:mt-0  mt-5 mb-5">
                                     <img class="  mx-auto  lg:w-36" src="./images/congo.png" alt="" srcset="">
@@ -177,7 +178,7 @@
                                     <div class="modal-action justify-center">
                                         <!-- if there is a button in form, it will close the modal -->
                                         <button id="btn-home"
-                                            class="bg-[#E527B2] px-5  py-3 rounded text-[#FFF] text-xl font-semibold">Go
+                                            class="bg-[#E527B2] px-5 py-3 rounded text-[#FFF] text-xl font-semibold">Go
                                             Home</button>
                                     </div>
 
@@ -195,14 +196,14 @@
 
 
     <!-- second card section -->
-    <section class="container mx-auto google-font my-12 p-5 ">
+    <section class="container mx-auto google-font mt-5 p-5 ">
         <h2 class="text-color text-4xl mb-5">Kitchenware</h2>
 
         <!-- card  section 1 -->
         <div class="card-container gap-4 grid md:grid-cols-2 lg:grid-cols-4">
             <div onclick="getContainer(this)" class="card  shadow-2xl p-3">
 
-                <img class=" pt-10 bg-[#1111110D]" src="./images/prod4.png" alt="" class="rounded-xl" />
+                <img class=" pt-12 bg-[#1111110D]" src="./images/prod4.png" alt="" class="rounded-xl" />
 
                 <div class="card-body items-center text-center">
                     <div class="rating">
@@ -221,7 +222,7 @@
 
             <div onclick="getContainer(this)" class="card  shadow-2xl p-3">
 
-                <img class="px-10   bg-[#1111110D]" src="./images/prod5.png" alt="" class="rounded-xl" />
+                <img class="px-10 pt-12  bg-[#1111110D]" src="./images/prod5.png" alt="" class="rounded-xl" />
 
                 <div class="card-body items-center text-center">
                     <div class="rating">
@@ -241,7 +242,7 @@
 
             <div onclick="getContainer(this)" class="card  shadow-2xl p-3">
 
-                <img class="px-10 pt-10 w-50 bg-[#1111110D]" src="./images/prod6.png" alt="" class="rounded-xl" />
+                <img class="px-10 pt-16 w-50 bg-[#1111110D]" src="./images/prod6.png" alt="" class="rounded-xl" />
 
                 <div class="card-body items-center text-center">
                     <div class="rating">

@@ -2,19 +2,20 @@ let value = 0;
 
 function getContainer(event) {
     const element = event.childNodes[5].innerText;
-    const newOl = document.createElement('ol');
 
-    newOl.innerText = element;
+    const newLi = document.createElement('li');
+
+    newLi.innerText = element;
 
     const getName = document.getElementById('get-name');
-    getName.appendChild(newOl);
+    getName.appendChild(newLi);
 
     const shopCartPrice = event.childNodes[7].innerText.split(' ')[0];
     value = value + parseFloat(shopCartPrice)
 
     const TotalPrice = document.getElementById('Total-price').innerText = value.toFixed(2);
 
-    if (value > 0) {
+    if (value >= 200) {
         const discountBtn = document.getElementById('discount-btn');
         discountBtn.disabled = false;
     } else {
@@ -27,6 +28,8 @@ function getContainer(event) {
         const makePurchase = document.getElementById('btn-purchase');
 
         makePurchase.disabled = false;
+        const totalPay = document.getElementById('total-pay');
+        totalPay.innerText = value.toFixed(2);
 
     } else {
         makePurchase.disabled = true
