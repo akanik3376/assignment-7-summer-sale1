@@ -38,7 +38,7 @@ function getContainer(event) {
 }
 
 document.getElementById('btn-home').addEventListener('click', function () {
-    window.location.href = 'https://gleeful-genie-66a4d7.netlify.app/'
+    window.location.href = 'index.html'
 })
 
 const inputFild = document.getElementById('input-fild')
