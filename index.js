@@ -62,8 +62,6 @@ discountBtn.addEventListener('click', function () {
 
     }
 
-
-
 })
 
 
